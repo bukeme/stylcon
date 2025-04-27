@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.contain {
+  @apply max-w-[1200px] mx-auto px-6 xl:px-0;
+}
+
+@font-face {
+  font-family: "Satoshi-Regular";
+  src: url("/fonts/satoshi/Satoshi-Regular.woff2") format("woff2"),
+    url("/fonts/satoshi/Satoshi-Regular.woff") format("woff"),
+    url("/fonts/satoshi/Satoshi-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+.Satoshi {
+  font-family: "Satoshi-Regular", sans-serif;
+}
+
+@font-face {
+  font-family: "Satoshi-Medium";
+  src: url("/fonts/satoshi/Satoshi-Medium.woff2") format("woff2"),
+    url("/fonts/satoshi/Satoshi-Medium.woff") format("woff"),
+    url("/fonts/satoshi/Satoshi-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+
+.Satoshi-md {
+  font-family: "Satoshi-Medium", sans-serif;
+}
+
+@font-face {
+  font-family: "Satoshi-Bold";
+  src: url("/fonts/satoshi/Satoshi-Bold.woff2") format("woff2"),
+    url("/fonts/satoshi/Satoshi-Bold.woff") format("woff"),
+    url("/fonts/satoshi/Satoshi-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+.Satoshi-bold {
+  font-family: "Satoshi-Bold", sans-serif;
+}
+
+@font-face {
+  font-family: "Satoshi-Black";
+  src: url("/fonts/satoshi/Satoshi-Black.woff2") format("woff2"),
+    url("/fonts/satoshi/Satoshi-Black.woff") format("woff"),
+    url("/fonts/satoshi/Satoshi-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-display: swap;
+  font-style: normal;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+* {
+  scrollbar-width: none;
+  scrollbar-color: transparent transparent;
+}
+.ms-scrollbar {
+  -ms-overflow-style: none;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
+}
+
+#nprogress .bar {
+  background: #141414 !important; /* Blue color */
+  background-color: #141414;
+  height: 5px !important;
+  border-radius: 16px;
+}
