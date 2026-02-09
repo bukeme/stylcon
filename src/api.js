@@ -10,7 +10,7 @@ const handleError = (error) => {
   return Promise.reject(error);
 };
 const api = axios.create({
-  baseURL: "https://api.stylconmarketplace.com",
+  baseURL: "https://stylcon2.vercel.app",
   headers: {
     Accept: "application/json",
     "Content-Type": "application/json",
